@@ -19,7 +19,7 @@
   --title-color: hsl(207, 4%, 16%);
   --text-color: hsl(207, 4%, 28%);
   --text-color-light: hsl(207, 4%, 56%);
-  --body-color: hsla(0, 0%, 25%, 0.5);
+  --body-color: hsla(0, 0%, 25%, 0.3);
   --container-color: hsl(207, 4%, 95%);
 
   /* Change the first number */
@@ -79,6 +79,7 @@
 html {
 
   /* background: url(/assets/img/background.png) no-repeat center center fixed;  */
+  background: url(/assets/img/wallpaper.png) no-repeat center center fixed; 
   background-color: hsla(0, 0%, 0%, 1);
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -659,6 +660,69 @@ img {
     clear: both;
   }
   
+
+  /*-----------------------------------*\
+ * #SERVICE
+ \*-----------------------------------*/
+
+ .service__section { padding-block: 2rem; }
+
+ .service__container {
+  padding-inline-start: 5px;
+}
+
+ .service-list {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 1rem;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 2.5rem;
+ }
+ 
+ .service-item {
+   max-width: 22rem;
+   width: 100%;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+ }
+ 
+ .service-content{
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    justify-content: center;
+ }
+ .service-item-icon { 
+    width: 40%;
+    background-color: hsla(0, 0%, 80%,0.7);
+    border-radius: 20rem;
+    padding: 1rem;
+    display: inline-block;
+    margin-right: -1rem;
+    z-index: 1;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,.6);
+ }
+ 
+ .service-item-icon img {
+    width: 100%;
+    margin-inline: auto;
+ }
+ 
+ .service-item-title {
+   color: black;
+   font-size: var(--fs-7);
+   font-weight: var(--fw-600);
+ }
+
+ .service-item-text {
+    color: black;
+ }
+
+
+
+
   /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column {
