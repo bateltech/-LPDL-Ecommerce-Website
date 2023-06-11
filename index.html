@@ -17,7 +17,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
         <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+        
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -118,12 +119,150 @@
         <!--==================== MAIN ====================-->
         <main class="main">
 
-            <section class="main__swiper__container">
+            <!--==================== ACCUEIL ====================-->
+            <section class="accueil__container">
+                <h1 class="accueil__title">LA Pierre De<br>Lune</h1>
+                <div class="accueil__line"></div>
+                <div class="accueil__data">
+                    <p class="accueil__description">
+                        DES BIJOUX ARTISANAUX RIEN<br>QUE POUR VOUS !
+                    </p>
 
+                    <button class="accueil__button">
+                        Commencer
+                    </button>
+                </div>
             </section>
 
+
+            <!-- swiper test -->
+
+                <section class="swiper mySwiper">
+
+                    <div class="swiper-wrapper">
+
+
+
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                        <img src="/assets/img/produits/bracelets.png" alt="card image">
+                        </div>
+
+                        <div class="card__content">
+                        <span class="card__title">BRACELETS</span>
+                        <!--<button class="card__btn">Voir plus</button>-->
+                        </div>
+                    </div>
+
+
+
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                        <img src="/assets/img/produits/boucle.png" alt="card image">
+                        </div>
+
+                        <div class="card__content">
+                        <span class="card__title">BOUCLES D'OREILLES</span>
+                        <!--<button class="card__btn">Voir plus</button>-->
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                        <img src="/assets/img/produits/orgonites.jpg" alt="card image">
+                        </div>
+
+                        <div class="card__content">
+                        <span class="card__title">ORGONITES</span>
+                        <!--<button class="card__btn">Voir plus</button>-->
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                        <img src="/assets/img/produits/bouddhas.jpg" alt="card image">
+                        </div>
+
+                        <div class="card__content">
+                        <span class="card__title">BOUDDHA</span>
+                        <!--<button class="card__btn">Voir plus</button>-->
+                        </div>
+                    </div>
+
+
+
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                        <img src="/assets/img/produits/malas.png" alt="card image">
+                        </div>
+
+                        <div class="card__content">
+                        <span class="card__title">MALAS</span>
+                        <!--<button class="card__btn">Voir plus</button>-->
+                        </div>
+                    </div>
+
+
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                        <img src="/assets/img/produits/bolas.png" alt="card image">
+                        </div>
+
+                        <div class="card__content">
+                        <span class="card__title">BOLAS POUR GROSSESSE</span>
+                        <!--<button class="card__btn">Voir plus</button>-->
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                        <img src="/assets/img/produits/plaques.jpg" alt="card image">
+                        </div>
+
+                        <div class="card__content">
+                        <span class="card__title">PLAQUES DE RECHARGEMENT </span>
+                        <!--<button class="card__btn">Voir plus</button>-->
+                        </div>
+                    </div>
+
+
+
+                    <div class="card swiper-slide">
+                        <div class="card__image">
+                        <img src="/assets/img/produits/deco.jpg" alt="card image">
+                        </div>
+
+                        <div class="card__content">
+                        <span class="card__title">DÉCORATION</span>
+                        <!--<button class="card__btn">Voir plus</button>-->
+                        </div>
+                    </div>
+
+
+
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class="fa-regular fa-chevrons-right"></i>
+                      </div>
+                      <div class="swiper-button-prev">
+                        <i class="fa-regular fa-chevrons-left"></i>
+                      </div>
+
+                </section>
+
+
             <!--==================== COLLECTION ====================-->
-            <section class="collection__container">
+            <section class="container">
                 <h1 style="text-align: center;">DÉCOUVREZ NOS COLLECTIONS</h1>
 
             </section>
@@ -256,5 +395,34 @@
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            initialSlide:2,          
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 300,
+                modifier: 1,
+                slideShadows: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            });
+        </script>
+
     </body>
 </html>
