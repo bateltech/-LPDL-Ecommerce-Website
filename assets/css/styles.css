@@ -82,7 +82,7 @@
 html {
 
   /* background: url(/assets/img/background.png) no-repeat center center fixed;  */
-  background: url("../assets/img/wallpaper.png") no-repeat center center fixed; 
+  background: url("./assets/img/wallpaper.png") no-repeat center center fixed; 
   background-color: hsla(0, 0%, 0%, 1);
   -webkit-background-size: cover;
   -moz-background-size: cover;
