@@ -82,7 +82,7 @@
 html {
 
   background: url("https://images.unsplash.com/photo-1629890370025-0ee51ee24eb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80") no-repeat center center fixed;
-  background: url("../assets/img/wallpaper.png") no-repeat center center fixed; 
+  /*background: url("../assets/img/wallpaper.png") no-repeat center center fixed; */
   background-color: hsla(0, 0%, 0%, 1);
   -webkit-background-size: cover;
   -moz-background-size: cover;
