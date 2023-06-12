@@ -495,12 +495,25 @@ border: none;
 }
 
 
+  /*-----------------------------------*\
+ * #ARTISTE
+ \*-----------------------------------*/
+ .artiste__section{
+  padding-block: 2rem;
+  width: 100%;
+  background-color: var(--darkgray-color);
+ }
+
 
  /*-----------------------------------*\
  * #SERVICE
  \*-----------------------------------*/
 
- .service__section { padding-block: 2rem; }
+ .service__section {
+  padding-block: 2rem;
+  width: 100%;
+  background-color: var(--darkgray-color);
+   }
 
  .service__container {
   padding-inline-start: 5px;
@@ -509,33 +522,36 @@ border: none;
  .service-list {
    display: flex;
    flex-wrap: wrap;
-   margin: 1rem;
-   justify-content: flex-start;
-   align-items: center;
+   margin: 2rem 1rem 2rem 1rem;
+   justify-content: center;
    gap: 2.5rem;
  }
  
  .service-item {
-   max-width: 22rem;
+   max-width: 20rem;
    width: 100%;
    display: flex;
    justify-content: flex-start;
+   flex-direction: column;
+   margin: 0 2rem 0 2rem;
    align-items: center;
  }
  
  .service-content{
-    background-color: hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 80%);
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: 2.5rem;
+    height: 12rem;
+    width: 100%;
     justify-content: center;
  }
  .service-item-icon { 
-    width: 40%;
+    width: 35%;
     background-color: hsla(0, 0%, 80%,0.7);
     border-radius: 20rem;
     padding: 1rem;
     display: inline-block;
-    margin-right: -1rem;
+    margin-bottom: -2rem;
     z-index: 1;
     box-shadow: 2px 2px 5px 2px rgba(0,0,0,.6);
  }
@@ -547,13 +563,60 @@ border: none;
  
  .service-item-title {
    color: black;
-   font-size: var(--fs-7);
-   font-weight: var(--fw-600);
+   font-size: 1.4rem;
+   font-weight:500;
+   letter-spacing: 0.4px;
+   margin-bottom: 1rem;
+
  }
 
  .service-item-text {
     color: black;
  }
+
+
+  /*-----------------------------------*\
+ * #VOYANCE
+ \*-----------------------------------*/
+ .voyance__section{
+  padding-block: 2rem;
+  width: 100%;
+  background-color: var(--darkgray-color);
+ }
+
+
+
+
+  /*-----------------------------------*\
+ * #GOOGLE MAPS
+ \*-----------------------------------*/
+
+.maps__section {
+  position: relative;
+  width: 100%;
+  height: 36rem;
+  display: grid;
+  place-items: center;
+  background-color: var(--darkgray-color);
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  
+}
+
+
+.map-container {
+  position: relative;
+  width: 90%;
+  padding-bottom: 56.25%; /* Aspect ratio of 16:9 */
+}
+
+.maps__section iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+}
+
 
 
 /*=============== FOOTER ===============*/

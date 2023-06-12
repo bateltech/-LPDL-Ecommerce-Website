@@ -30,7 +30,6 @@ const linkAction = () =>{
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
-
 /*=============== EMAIL JS ===============*/
 const contactForm = document.getElementById('contact-form'),
       contactName = document.getElementById('contact-name'),
