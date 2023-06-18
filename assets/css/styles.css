@@ -20,9 +20,10 @@
   --title-color: hsl(207, 4%, 16%);
   --text-color: hsl(207, 4%, 28%);
   --text-color-light: hsl(207, 4%, 56%);
-  --body-color: hsla(0, 0%, 25%, 0.3);
+  --body-color: hsla(0, 0%, 25%, 0.5);
   --container-color: hsl(207, 4%, 95%);
   --darkgray-color: hsl(0, 0%, 10%);
+  --darkwhite-color:hsl(0, 0%, 80%);
 
   /* Change the first number */
   /* Blue: 207 - Purple: 250 - Pink: 356 - Teal: 174 */
@@ -80,9 +81,8 @@
 }
 
 html {
-
-  /* background: url(/assets/img/background.png) no-repeat center center fixed;  */
-  background: url(/assets/img/wallpaper.png) no-repeat center center fixed; 
+   background: url("https://images.unsplash.com/photo-1629890370025-0ee51ee24eb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80") no-repeat center center fixed;
+  /*background: url("../assets/img/wallpaper.jpg") no-repeat center center fixed;*/
   background-color: hsla(0, 0%, 0%, 1);
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -114,6 +114,7 @@ h1, h2, h3 {
   font-family: var(--title-font);
   font-weight: var(--font-medium);
 }
+
 
 ul {
   list-style: none;
@@ -184,6 +185,16 @@ img {
   overflow: hidden; /* For animation */
   display: grid;
   place-items: center;
+}
+
+/*=============== COMMON STYLE ===============*/
+.artiste__title,
+.voyance__title,
+.collection__title,
+.service__title{
+  text-align: center;
+   padding-top: 4rem;
+   font-size: var(--h1-font-size);
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -483,12 +494,11 @@ cursor: pointer;
 
 .swiper-button-next,
 .swiper-button-prev {
-font-size: 30px;
-color: hsl(0, 0%, 30%);
+color: white;
 background-color: hsl(0, 0%, 70%, 0.6);
 height: 4rem;
 width: 3rem;
-border-radius: 3rem;
+border-radius: 1rem;
 box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.5);
 z-index: 1;
 border: none;
@@ -501,7 +511,82 @@ border: none;
  .artiste__section{
   padding-block: 2rem;
   width: 100%;
+  height: 30rem;
   background-color: var(--darkgray-color);
+  position: relative;
+ }
+
+ .artiste__title{
+  float: right !important;
+  transform: translateY(-80%);
+  padding-right: 20rem;
+  position: relative;
+ }
+
+
+.artiste__title::before {
+  content: "";
+  position: absolute;
+  left: 7%;
+  bottom: 1.2rem;
+  width: 50rem;
+  height: 0.75rem;
+  transform: skew(-12deg) translate(-15%,115%);
+  background: #535353;
+  z-index: -1;
+}
+
+ .artiste__content{
+  background-color: var(--darkwhite-color);
+  width: 100%;
+  height: 20rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+ }
+
+ .artiste-text{
+  text-align: center;
+  font-family: Garamond, serif;
+  width: 70%;
+  height: 100%;
+  padding-right: 10rem;
+  font-size: 1.25rem;
+  float: right;
+ }
+
+ .artiste__image{
+  position: absolute;
+  height: 26rem;
+  width: 100%;
+  z-index: 1;
+  margin: 2rem;
+  top: 50%;
+  padding-left: 2rem;
+  transform: translateY(-50%);
+  float: left;
+ }
+
+ .artiste__image img{
+  height: 100%;
+  width: 22rem;
+  object-fit: cover;
+  border-radius: 1rem;
+ }
+
+ .artiste__frame{
+  position: absolute;
+  height: 28rem;
+  width: 24rem;
+  border-radius: 1.5rem;
+  border: calc(2*10px) solid #0000;
+  outline: 2px solid #535353;
+  outline-offset: calc(-1*10px);
+  transform: translate(-10%, -10%);
  }
 
 
@@ -538,7 +623,7 @@ border: none;
  }
  
  .service-content{
-    background-color: hsl(0, 0%, 80%);
+    background-color: var(--darkwhite-color);
     border-radius: 0.5rem;
     padding: 2.5rem;
     height: 12rem;
@@ -575,19 +660,85 @@ border: none;
  }
 
 
-  /*-----------------------------------*\
+ /*-----------------------------------*\
  * #VOYANCE
  \*-----------------------------------*/
+
  .voyance__section{
   padding-block: 2rem;
   width: 100%;
+  height: 32rem;
   background-color: var(--darkgray-color);
+  position: relative;
+ }
+
+ .voyance__content{
+  background: url("/assets/img/voyance_bg.jpg") no-repeat center center fixed;
+  background-color: hsla(0, 0%, 0%, 1);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 20rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+ }
+
+ .voyance-text{
+  text-align: left;
+  font-family: var(--body-font);
+  width: 70%;
+  height: 100%;
+  padding-right: 15rem;
+  color: white;
+  font-size: 1.25rem;
+  float: left;
+  letter-spacing: 0.5px;
+  margin-left: 5rem;
  }
 
 
+.voyance__title{
+  z-index: 1;
+  position: absolute;
+  margin-left: 20rem;
+  margin-bottom: 10rem;
+ }
+
+ 
+.voyance__title::before {
+  content: "";
+  left: 7%;
+  position: absolute;
+  bottom: 1.2rem;
+  width: 62rem;
+  height: 0.75rem;
+  transform: skew(-12deg) translate(-55%,115%);
+  background: #535353;
+  z-index: -1;
+}
 
 
-  /*-----------------------------------*\
+.voyance__button{
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 3rem;
+  border: 1px solid;
+  color: white;
+  background-color: hsla(0, 1%, 67%, 0.6);
+  border-color: hsla(0, 0%, 90%, 0.7);
+  margin-top: 12rem;
+}
+
+
+ /*-----------------------------------*\
  * #GOOGLE MAPS
  \*-----------------------------------*/
 
