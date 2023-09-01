@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="en">
+    <html lang="en" style="background: none !important; background-color: hsla(0, 0%, 0%, 1) !important;">
     <head>
         
         <meta charset="UTF-8">
@@ -59,7 +59,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
+                            <a href="index.html" class="nav__link">
                                  Accueil
                             </a>
                         </li>
@@ -71,7 +71,7 @@
                         </li>
 
                         <li class="nav__item">
-                            <a href="#artist" class="nav__link">
+                            <a href="index.html#artist" class="nav__link">
                                  Artiste
                             </a>
                         </li>
@@ -83,13 +83,13 @@
                         </li>
 
                         <li class="nav__item">
-                            <a href="pierres.html" class="nav__link">
+                            <a href="pierres.html" class="nav__link active-link">
                                  Pierres
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#voyance" class="nav__link">
+                            <a href="index.html#voyance" class="nav__link">
                                  Voyance
                             </a>
                         </li>
@@ -103,9 +103,6 @@
                 </div>
 
                 <div class="nav__buttons">
-
-                    <!-- Theme change button -->
-                    <!-- <i class="ri-moon-clear-line change-theme" id="theme-button"></i> -->
                     
                     <!-- Toggle button -->
                     <div class="nav__toggle" id="nav-toggle">
@@ -120,31 +117,13 @@
         <!--==================== MAIN ====================-->
         <main class="main">
 
-            <!--==================== ACCUEIL ====================-->
-            <section class="accueil__container">
-                <h1 class="accueil__title">LA Pierre De<br>Lune</h1>
-                <div class="accueil__line"></div>
-                <div class="accueil__data">
-                    <p class="accueil__description">
-                        DES BIJOUX ARTISANAUX RIEN<br>QUE POUR VOUS !
-                    </p>
 
-                    <button class="accueil__button">
-                        Commencer
-                    </button>
-                </div>
-            </section>
-
-
-            <!--==================== COLLECTION ====================-->
-            <!-- swiper test -->
+            <!--==================== PIERRES ====================-->
 
                 <section class="swiper mySwiper">
-                    <h1 class="collection__title">DÉCOUVREZ NOS COLLECTIONS</h1>
+                    <h1 class="collection__title">DÉCOUVREZ NOS TYPES DE PIERRES</h1>
 
                     <div class="swiper-wrapper">
-
-
 
                     <div class="card swiper-slide">
                         <div class="card__image">
@@ -152,12 +131,9 @@
                         </div>
 
                         <div class="card__content">
-                        <span class="card__title">BRACELETS</span>
-                        <!--<button class="card__btn">Voir plus</button>-->
+                        <span class="card__title">CITRINE</span>
                         </div>
                     </div>
-
-
 
                     <div class="card swiper-slide">
                         <div class="card__image">
@@ -166,7 +142,6 @@
 
                         <div class="card__content">
                         <span class="card__title">BOUCLES D'OREILLES</span>
-                        <!--<button class="card__btn">Voir plus</button>-->
                         </div>
                     </div>
 
@@ -264,7 +239,7 @@
                 </section>
 
 
-            <!--==================== ARTISTE ====================-->
+            <!--==================== DESCRIPTION ====================-->
             <section class="artiste__section" id="artist">
                 <h1 class="artiste__title">Sandra DELAVACHERIE</h1>
                 <div class="artiste__container">
@@ -290,78 +265,133 @@
                 </div>
             </section>
 
-            
-            <!--==================== SERVICE ====================-->
-                    
-                <section class="service__section">
-                    <h1 class="service__title">COMMANDEZ SEREINEMENT</h1>
-                        <div class="service__container">
-                            <ul class="service-list">
-                                <li class="service-item">
-                                  
-                                  <div class="service-item-icon">
-                                    <img src="assets/img/Money Yours.svg" alt="service icon">
-                                  </div>
-            
-                                  <div class="service-content">
-            
-                                    <center>
-                                    <p class="service-item-title">Paiement sécurisé</p>
-                                    <p class="service-item-text">Vos données sont parfaitement protégées au moment de passer votre commande.</p></center>
-                                  </div>
-                                </li>
-            
-                                <li class="service-item">
-                                  <div class="service-item-icon">
-                                    <img src="assets/img/Shipped.svg" alt="service icon">
-                                  </div>
-            
-                                  <div class="service-content">
-                                    <center>
-                                    <p class="service-item-title">Livraison gratuite</p>
-            
-                                    <p class="service-item-text">La livraison vous est offerte pour tout achat à partir de <b>65 euros</b>.</p></center>
-                                  </div>
-                                </li>
-            
-                              </ul>
-                            </div>
-                </section>
+
+            <!--==================== COLLECTION ====================-->
+
+            <section class="swiper mySwiper">
+                <h1 class="collection__title">DÉCOUVREZ NOS COLLECTIONS</h1>
+
+                <div class="swiper-wrapper">
 
 
-            <!--==================== VOYANCE ====================-->
-            <section class="voyance__section" id="voyance">
-                <h1 class="voyance__title">DEMANDE DE VOYANCE</h1>
 
-                <div class="voyance__content">
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                    <img src="assets/img/produits/bracelets.png" alt="card image">
+                    </div>
 
-                    <p class="voyance-text">
-                        Vous vous posez des questions, je peux vous répondre par mail très rapide et m'expliquer un peu le contenu, car très souvent les questions ne sont pas claires.<br><br>
-
-                        Il me faut impérativement une photo de vous de la tête au pied.
-
-                        <br><br>Après paiement, envoyez votre demande à cette adresse à sandramedium@hotmail.com
-
-                        <br><br>N'appelez pas à mon numéro, je ne fais aucune voyance par téléphone.
-                    </p>
-
-                    <button class="voyance__button">
-                        Envoyez une demande
-                    </button>
-
+                    <div class="card__content">
+                    <span class="card__title">BRACELETS</span>
+                    <!--<button class="card__btn">Voir plus</button>-->
+                    </div>
                 </div>
 
 
-            </section>
+
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                    <img src="assets/img/produits/boucle.png" alt="card image">
+                    </div>
+
+                    <div class="card__content">
+                    <span class="card__title">BOUCLES D'OREILLES</span>
+                    <!--<button class="card__btn">Voir plus</button>-->
+                    </div>
+                </div>
 
 
-            <!--==================== GOOGLE MAPS ====================-->
-            
-            <section class="maps__section">
-                <div class="floating-label">VISITEZ-NOUS !</div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.533093464446!2d2.372805111524024!3d43.49121346277241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ae1933a0a3a0d3%3A0x634215eade142367!2sLa%20pierre%20de%20lune!5e0!3m2!1sfr!2sdz!4v1686522074819!5m2!1sfr!2sdz" 
-                 height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                    <img src="assets/img/produits/orgonites.jpg" alt="card image">
+                    </div>
+
+                    <div class="card__content">
+                    <span class="card__title">ORGONITES</span>
+                    <!--<button class="card__btn">Voir plus</button>-->
+                    </div>
+                </div>
+
+
+
+
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                    <img src="assets/img/produits/bouddhas.jpg" alt="card image">
+                    </div>
+
+                    <div class="card__content">
+                    <span class="card__title">BOUDDHA</span>
+                    <!--<button class="card__btn">Voir plus</button>-->
+                    </div>
+                </div>
+
+
+
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                    <img src="assets/img/produits/malas.png" alt="card image">
+                    </div>
+
+                    <div class="card__content">
+                    <span class="card__title">MALAS</span>
+                    <!--<button class="card__btn">Voir plus</button>-->
+                    </div>
+                </div>
+
+
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                    <img src="assets/img/produits/bolas.png" alt="card image">
+                    </div>
+
+                    <div class="card__content">
+                    <span class="card__title">BOLAS POUR GROSSESSE</span>
+                    <!--<button class="card__btn">Voir plus</button>-->
+                    </div>
+                </div>
+
+
+
+
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                    <img src="assets/img/produits/plaques.jpg" alt="card image">
+                    </div>
+
+                    <div class="card__content">
+                    <span class="card__title">PLAQUES DE RECHARGEMENT </span>
+                    <!--<button class="card__btn">Voir plus</button>-->
+                    </div>
+                </div>
+
+
+
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                    <img src="assets/img/produits/deco.jpg" alt="card image">
+                    </div>
+
+                    <div class="card__content">
+                    <span class="card__title">DÉCORATION</span>
+                    <!--<button class="card__btn">Voir plus</button>-->
+                    </div>
+                </div>
+
+
+
+                </div>
+
+                <div class="swiper-button-next">
+                    <i class="fa-regular fa-chevrons-right"></i>
+                  </div>
+                  <div class="swiper-button-prev">
+                    <i class="fa-regular fa-chevrons-left"></i>
+                  </div>
+
             </section>
+
 
         </main>
 

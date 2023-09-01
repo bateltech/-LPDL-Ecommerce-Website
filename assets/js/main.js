@@ -76,7 +76,10 @@ const sendEmail = (e) =>{
 contactForm.addEventListener('submit', sendEmail)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-const sections = document.querySelectorAll('section[id]')
+
+
+
+/*const sections = document.querySelectorAll('section[id]')
     
 const scrollActive = () =>{
   	const scrollY = window.pageYOffset
@@ -95,6 +98,30 @@ const scrollActive = () =>{
 	})
 }
 window.addEventListener('scroll', scrollActive)
+*/
+
+
+
+// Select all navigation links with anchor hrefs
+const navLinks = document.querySelectorAll('.nav__link');
+
+// Add click event listener to each navigation link
+navLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent default link behavior
+
+        const targetId = link.getAttribute('href'); // Get the target anchor ID
+        const targetElement = document.querySelector(targetId); // Find the target element
+
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth', // Use smooth scrolling
+            });
+        }
+    });
+});
+
+
 
 /*=============== SHOW SCROLL UP ===============*/ 
 const scrollUp = () =>{

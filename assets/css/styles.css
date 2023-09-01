@@ -88,11 +88,12 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  scroll-behavior: smooth;
 }
 
 body {
   scrollbar-width: thin;
-  scrollbar-color: rgba(0,0,0,0.5) transparent;
+  scrollbar-color: rgba(0,0,0,0.5) rgba(233, 233, 233, 0.1) ;
   
   justify-content: center;
   font-family: var(--body-font);
@@ -100,15 +101,29 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: background .4s; /* for dark mode animation */
+}   
+
+/*=============== SCROLL BAR ===============*/
+
+::-webkit-scrollbar{
+  width: .8rem;
+  border-radius: .5rem;
+  background-color: hsl(207, 4%, 75%);
 }
 
-body::-webkit-scrollbar {
-  display: none;
+body::-webkit-scrollbar-track {
+  background: #f1f1f10a; /* Track color */
 }
 
-body::-webkit-scrollbar-thumb {
-  background-color: rgba(0,0,0,.5);
+::-webkit-scrollbar-thumb{
+  background-color: hsl(207, 4%, 65%);
+  border-radius: .5rem;
 }
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(207, 4%, 55%);
+}
+
 h1, h2, h3 {
   color: white;
   font-family: var(--title-font);
@@ -190,7 +205,10 @@ img {
 .artiste__title,
 .voyance__title,
 .collection__title,
-.service__title{
+.service__title,
+.connexion__title,
+.inscription__title,
+.mentions__title {
   text-align: center;
    padding-top: 4rem;
    font-size: var(--h1-font-size);
@@ -754,7 +772,6 @@ border: none;
   
 }
 
-
 .map-container {
   position: relative;
   width: 90%;
@@ -768,7 +785,17 @@ border: none;
   height: 80%;
 }
 
-
+.floating-label {
+  position: absolute;
+  top: 5px;
+  right: 5px; /* Position to the top right corner */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 2px;
+  margin-top: 5rem;
+  z-index: 1000; /* Make sure the label appears above the map */
+}
 
 /*=============== FOOTER ===============*/
 
@@ -868,7 +895,7 @@ border: none;
     margin-top: 1.5rem !important;
   }
   
-  input[type='text']{
+  #newsletter_input{
     width:85%;
     height:3.5rem;
     margin-top:20px;
@@ -882,17 +909,17 @@ border: none;
     position:relative;
   }
   
-  input[type='text']:active:focus,
-  input[type='text']:focus,
-  input[type='text']:hover{
+  #newsletter_input:active:focus,
+  #newsletter_input:focus,
+  #newsletter_input:hover{
     outline : none;
     font-size:20px;
     padding: 0.5rem;
   }
   
   
-  input[type='text']:focus::-webkit-input-placeholder,
-  input[type='text']:active:focus::-webkit-input-placeholder
+  #newsletter_input:focus::-webkit-input-placeholder,
+  #newsletter_input:active:focus::-webkit-input-placeholder
   {
     font-size:12px;
     display:block;
