@@ -691,7 +691,8 @@ border: none;
  }
 
  .voyance__content{
-  background: url("/assets/img/voyance_bg.jpg") no-repeat center center fixed;
+  background: url('https://raw.githubusercontent.com/bateltech/-LPDL-Ecommerce-Website/main/assets/img/voyance_bg.jpg') no-repeat center center fixed;
+  /*background: url("/assets/img/voyance_bg.jpg") no-repeat center center fixed;*/
   background-color: hsla(0, 0%, 0%, 1);
   -webkit-background-size: cover;
   -moz-background-size: cover;
