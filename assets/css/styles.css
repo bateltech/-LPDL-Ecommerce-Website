@@ -975,13 +975,201 @@ border: none;
   
 
 
+  /*-----------------------------------*\
+  * ARTICLES.HTML
+  \*-----------------------------------*/
+
+  /* ----  SIDEBAR MENU ---- */
+  aside {
+    position: absolute;
+    z-index: 1000;
+    color: white;
+    width: 16rem;
+    padding-left: 1.25rem;
+    height: 100vh;
+    background-image: linear-gradient(30deg , #494949, gray);
+    border-top-right-radius: 5rem;
+    left: 0;
+  }
+  
+  aside a {
+    font-size: 18px;
+    color: white;
+    display: block;
+    padding: 14px;
+    padding-left: 20px;
+    text-decoration: none;
+    -webkit-tap-highlight-color:transparent;
+  }
+  
+  aside a:hover {
+    color: gray;
+    outline: none;
+    position: relative;
+    background-color: white;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+  }
+  
+  aside a:hover::after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    bottom: 100%;
+    right: 0;
+    height: 35px;
+    width: 35px;
+    border-bottom-right-radius: 18px;
+    box-shadow: 0 20px 0 0 white;
+  }
+  
+  aside a:hover::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 100%;
+    right: 0;
+    height: 35px;
+    width: 35px;
+    border-top-right-radius: 18px;
+    box-shadow: 0 -20px 0 0 white;
+  }
+  
+  aside p {
+    margin: 0;
+    padding: 40px 0;
+  }  
+
+  /* ---- ARTICLES ---- */
+  /* Styles for article__main and aside (your existing styles) */
+.article__main {
+  display: flex;
+}
+
+/* Styles for section__header */
+.section__header {
+  text-align: left;
+}
+
+.section__header h2 {
+  font-size: 24px;
+}
+
+/* Styles for horizontal-scroll */
+
+.horizontal-scroll {
+  white-space: nowrap; /* Prevent content from wrapping */
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  padding: 10px; /* Optional: Add padding to the scrollable area */
+  
+}
+
+.rounded-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: white;
+  color: gray;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Styles for product-cards */
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.product-card {
+  width: calc(33.33% - 20px); /* Three cards per row with spacing */
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px; /* Adjust the height as needed */
+  border-radius: 15px;
+  /* Additional card styling here... */
+}
+
+  .article__section {
+    height: 115vh;
+    padding-block: 2rem;
+    padding: 2rem;
+    width: 100%;
+    margin-left: 16rem;
+  }
+
+  /* ---- LIVRAISON & PROMO ----*/
+  /* Style de la barre */
+
+  .livraison__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #352c31, gray); /* Dégradé gris */
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Style de l'image SVG à gauche */
+.livraison__image {
+    width: 7rem; /* Ajustez la largeur selon vos besoins */
+    margin-right: 6rem; /* Espace entre l'image et les paragraphes */
+}
+
+/* Style des paragraphes à droite */
+/*.livraison__paragraphes {
+
+}*/
+
+.right__line::before {
+  content: "";
+  right: 0%;
+  bottom: 2.5rem;
+  width: 50rem;
+  height: 0.2rem;
+  transform: translate(15%,115%);
+  background: white;
+  z-index: 1;
+}
+
+.left__line::before {
+  content: "";
+  position:relative;
+  left: 0%;
+  bottom: 2.5rem;
+  width: 50rem;
+  height: 0.2rem;
+  transform: translate(15%,115%);
+  background: white;
+  z-index: 1;
+}
+
+.livraison__paragraphes p{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: x-large;
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
   /* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
-
 
 
   /* Responsive layout - makes the columns stack on top of each other instead of next to each other */

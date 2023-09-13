@@ -259,4 +259,37 @@ balls.forEach((el, i, ra) => {
   );
 });
 
+/* HORIZONTAL SCROLL BAR FOR FILTERS */
+
+// JavaScript to enable click-and-drag scrolling
+const scrollContainer = document.getElementById('scrollContainer');
+let isDragging = false;
+let startX, scrollLeft;
+
+scrollContainer.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.pageX - scrollContainer.offsetLeft;
+    scrollLeft = scrollContainer.scrollLeft;
+    scrollContainer.style.cursor = 'grabbing'; // Change cursor style when dragging
+});
+
+scrollContainer.addEventListener('mouseleave', () => {
+    isDragging = false;
+    scrollContainer.style.cursor = 'grab'; // Restore cursor style when not dragging
+});
+
+scrollContainer.addEventListener('mouseup', () => {
+    isDragging = false;
+    scrollContainer.style.cursor = 'grab'; // Restore cursor style when not dragging
+});
+
+scrollContainer.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - scrollContainer.offsetLeft;
+    const walk = (x - startX) * 2; // Adjust the scrolling speed if needed
+    scrollContainer.scrollLeft = scrollLeft - walk;
+});
+
+
 /* ####################################### */

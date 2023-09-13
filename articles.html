@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="en">
+    <html lang="en" style="background: none !important; background-color: hsla(0, 0%, 0%, 1) !important;">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,7 +69,7 @@
                         </li>
 
                         <li class="nav__item">
-                            <a href="#artist" class="nav__link">
+                            <a href="index.html#artist" class="nav__link">
                                  Artiste
                             </a>
                         </li>
@@ -87,7 +87,7 @@
                         </li>
 
                         <li class="nav__item">
-                            <a href="#voyance" class="nav__link">
+                            <a href="index.html#voyance" class="nav__link">
                                  Voyance
                             </a>
                         </li>
@@ -118,31 +118,138 @@
         <!--==================== MAIN ====================-->
         <main class="main">
 
-            <section class="main__swiper__container">
+            <!--==================== ARTICLES ====================-->
+            <div class="article__main">
 
-            </section>
+                <!-- Sidebar Menu -->
+                <aside>
+                    <p> </p>
+                    <a href="">
+                      Bracelets
+                    </a>
+                    <a href="">
+                      Boucles d'oreilles
+                    </a>
+                    <a href="">
+                      Malas
+                    </a>
+                    <a href="">
+                      Orgonites
+                    </a>
+                    <a href="">
+                      Plaques de rechargement
+                    </a>
+                    <a href="">
+                        Bolas pour grossesse
+                      </a>
+                      <a href="">
+                        Bougeoirs
+                      </a>
+                      <a href="">
+                        Bouddha
+                      </a>
+                </aside>
+
+                <section class="article__section">
+                    <div class="section__header">
+                        <h2>Title Aligned to the Left</h2>
+                        <p>Description sentence below the title</p>
+                    </div>
             
+                    <div class="horizontal-scroll" id="scrollContainer">
+                        <button class="rounded-button">Button 1</button>
+                        <button class="rounded-button">Button 2</button>
+                        <button class="rounded-button">Button 3</button>
+                        <button class="rounded-button">Button 1</button>
+                        <button class="rounded-button">Button 2</button>
+                        <button class="rounded-button">Button 3</button>
+                        <button class="rounded-button">Button 1</button>
+                        <button class="rounded-button">Button 2</button>
+                        <button class="rounded-button">Button 3</button>
+                        <button class="rounded-button">Button 1</button>
+                        <button class="rounded-button">Button 2</button>
+                        <button class="rounded-button">Button 3</button>
+                        <button class="rounded-button">Button 1</button>
+                        <button class="rounded-button">Button 2</button>
+                        <button class="rounded-button">Button 3</button>
+                        <!-- Add more buttons as needed -->
+                    </div>
+
+                    <div class="product-cards">
+                        <div class="product-card" style="background-image: url('product1.jpg');">
+                            <h3>Product 1</h3>
+                            <p>Product description goes here.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    
+                        <div class="product-card" style="background-image: url('product2.jpg');">
+                            <h3>Product 2</h3>
+                            <p>Product description goes here.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    
+                        <div class="product-card" style="background-image: url('product3.jpg');">
+                            <h3>Product 3</h3>
+                            <p>Product description goes here.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    
+                        <!-- Add more product cards as needed -->
+                    </div>
+                    
+                </section>
+
+            </div>
+
+            <!--==================== LIVRAISON ====================-->
+            <section class="livraison__section">
+
+                <div class="right__line"> </div>
+
+                <div class="livraison__container">
+                    <img class="livraison__image" src="assets/img/camion.svg" alt="Image SVG">
+                    <div class="livraison__paragraphes">
+                        <b><p>Livraison à domicile</p></b>
+                        <p>5,00 €</p>
+                        <p>2 à 3 jours ouvrables (France)</p>
+                    </div>
+                </div>
+                
+                <div class="left__line"> </div>
+
+                <div class="right__line"> </div>
+
+                <div class="livraison__container">
+                    <div class="livraison__paragraphes">
+                        <p>Livraison gratuite pour tous les achats à partir de 65,00 €</p>
+                    </div>
+                </div>
+                
+                <div class="left__line"> </div>
+            </section>
+
 
         </main>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer" style="background-color:#414141;">
+            
             <div class="row">
                 <div class="column" style="background-color:#414141;">
                     <h2 style="color: white;">Menu Principal</h2>
                     <ul class="footer__menu__principal">
-                        <li class="footer__link"><a href="" >ACCUEIL</a></li>
+                        <li class="footer__link"><a href="index.html" >ACCUEIL</a></li>
                         <li class="footer__link"><a href="" >COLLECTION</a></li>
-                        <li class="footer__link"><a href="" >ARTISTE</a></li>
+                        <li class="footer__link"><a href="index.html#artist" >ARTISTE</a></li>
                         <li class="footer__link"><a href="articles.html" >ARTICLES</a></li>
-                        <li class="footer__link"><a href="" >VOYANCE</a></li>
+                        <li class="footer__link"><a href="index.html#voyance" >VOYANCE</a></li>
                     </ul>
                 </div>
                 <div class="column" style="background-color:#414141;">
                     <h2 style="color: white;">Aide</h2>
                     <ul class="footer__aide">
                         <li class="footer__link"><a href="conditions.html" >CONDITIONS GÉNÉRALES</a></li>
-                        <li class="footer__link"><a href="mentions.html" >MENTIONS LÉGALES</a></li>
+                        <li class="footer__link"><a href="mentions.html">MENTIONS LÉGALES</a></li>
                     </ul>
 
                 </div>
@@ -152,7 +259,7 @@
 
                         <li class="footer__link">
                             <img src="assets/img/attherate-icon.svg" alt="email icon">
-                            <a href="mailto:sandramedium@hotmail.com" >sandramedium@hotmail.com</a></li>
+                            <a href="mailto:sandramedium@hotmail.com">sandramedium@hotmail.com</a></li>
 
                         <li class="footer__link">
                             <img src="assets/img/phone-outline-icon.svg" alt="phone icon">
@@ -178,7 +285,7 @@
                         </p>
 
                         <form>
-                          <input type='text' placeholder="  Entrez votre email"><br/>
+                          <input id="newsletter_input" type='text' placeholder="  Entrez votre email"><br/>
                           <button class="btn" role="button">
                             Soumettre
                           </button>
